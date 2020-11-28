@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <div id="qaHeading" class="qaHeading"><h1>Magic Eight Ball Game</h1></div>
+        <div id="qaForm">
+            <form id="form">
+                <label for="username">Please enter your name-:</label> <br>
+                <input type="text" id="userName"  onkeyup="checkInput(this.value)"> <br> <br>
+                <button>Lets Begin</button>
+            </form>
+        </div>
+        <div id="afterQuitMessage"></div>
+        <div id="modalContainer">
+            <div id="modalConfirmExit">
+                <h3>Are sure to exit the game?</h3>
+                <a href="#" id="modalConfirmExitClose">x</a>
+            </div>
+            <button id="submitModalContainer">Yes</button>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
